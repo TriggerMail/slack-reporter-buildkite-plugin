@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -euox pipefail
 
 TOKEN=$(printenv ${BUILDKITE_PLUGIN_SLACK_REPORTER_TOKEN:-"SLACK_TOKEN"})
 CHANNEL=$(printenv ${BUILDKITE_PLUGIN_SLACK_REPORTER_CHANNEL:-"SLACK_CHANNEL"})
